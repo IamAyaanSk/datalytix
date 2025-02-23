@@ -1,34 +1,50 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import './globals.css'
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { AppSidebar } from '@/components/ui/app-sidebar'
+import { cookies } from 'next/headers'
+import { Separator } from '@/components/ui/separator'
+import { Avatar } from '@/components/ui/avatar'
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin']
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
-  title: "DataLytix",
-  description: "A minimal advanced dashboard and table showcase",
-};
+  title: 'DataLytix',
+  description: 'A minimal advanced dashboard and table showcase'
+}
 
-export default function RootLayout({
-  children,
+export default async function RootLayout({
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
+  const cookieStore = await cookies()
+  const defaultOpen = cookieStore.get('sidebar_state')?.value === 'true'
+
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <SidebarProvider defaultOpen={defaultOpen}>
+          <AppSidebar />
+          <main className="w-full">
+            <div className="flex items-center justify-between py-2">
+              <SidebarTrigger />
+              <Avatar className="bg-black mr-4" />
+            </div>
+            <Separator />
+            {children}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
-  );
+  )
 }
