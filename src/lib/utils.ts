@@ -24,6 +24,14 @@ export const getIstStringFromDate = (date: Date) => {
   }).toLocaleString(DateTime.DATE_MED)
 }
 
+export const checkDateEquality = (firstDate: Date | undefined, secondDate: Date | undefined) => {
+  if (!firstDate || !secondDate) {
+    return false
+  }
+
+  return DateTime.fromJSDate(firstDate).hasSame(DateTime.fromJSDate(secondDate), 'day')
+}
+
 export function getCompareToFilterPresets(date: Date) {
   const selectedDate = DateTime.fromJSDate(date, {
     zone: 'Asia/Kolkata'
