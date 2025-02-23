@@ -1,4 +1,4 @@
-import { Home, TableProperties, LayoutDashboard } from 'lucide-react'
+import { Home, Database, TableProperties, LayoutDashboard } from 'lucide-react'
 
 import {
   Sidebar,
@@ -22,7 +22,7 @@ const items = {
     },
     {
       title: 'Dashboard',
-      url: '#',
+      url: '/dashboard',
       icon: LayoutDashboard
     },
     {
@@ -37,7 +37,17 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <h1 className="text-xl font-bold px-2 py-1.5">Datalytix</h1>
+        <SidebarMenu>
+          <SidebarMenuItem className="py-1">
+            <SidebarMenuButton className="w-fit hover:bg-transparent active:bg-transparent" asChild>
+              <a href="/">
+                {/* TODO: Replace this with logo */}
+                <Database />
+                <h1 className="text-xl font-bold">DataLytix</h1>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarHeader>
       <Separator />
       <SidebarContent>

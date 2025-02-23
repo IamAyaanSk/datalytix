@@ -6,6 +6,7 @@ import { AppSidebar } from '@/components/ui/app-sidebar'
 import { cookies } from 'next/headers'
 import { Separator } from '@/components/ui/separator'
 import { Avatar } from '@/components/ui/avatar'
+import { Toaster } from 'sonner'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -44,6 +45,7 @@ export default async function RootLayout({
             {children}
           </main>
         </SidebarProvider>
+        <Toaster richColors closeButton position="bottom-center" />
       </body>
     </html>
   )
