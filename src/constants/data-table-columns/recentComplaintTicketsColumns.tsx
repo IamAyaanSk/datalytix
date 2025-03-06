@@ -21,7 +21,7 @@ export const recentComplaintTicketColumns = [
   }),
 
   recentComplaintTicketsDataColumnHelper.accessor('title', {
-    header: 'Distribution Entity Name',
+    header: 'Title',
     cell: ({ row }) => {
       const title = row.original.title ?? 'N/A'
 
@@ -31,7 +31,7 @@ export const recentComplaintTicketColumns = [
   }),
 
   recentComplaintTicketsDataColumnHelper.accessor('customer', {
-    header: 'Amount',
+    header: 'Customer',
     cell: ({ row }) => {
       const { name, email } = row.original.customer
 

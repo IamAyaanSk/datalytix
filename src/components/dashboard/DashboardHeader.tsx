@@ -237,27 +237,27 @@ export function DashboardHeader() {
             <SelectContent>
               <SelectGroup>
                 {comparedToPresets.yesterday && (
-                  <SelectItem className="group/select-item" value="yesterday">
+                  <SelectItem value="yesterday">
                     Yesterday{' '}
-                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                    <span className="text-gray-600">
                       ({getIstStringFromDate(new Date(comparedToPresets.yesterday))})
                     </span>
                   </SelectItem>
                 )}
 
                 {comparedToPresets.previousWeek && (
-                  <SelectItem className="group/select-item" value="previousWeek">
+                  <SelectItem value="previousWeek">
                     Last week{' '}
-                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                    <span className="text-gray-600">
                       ({getIstStringFromDate(new Date(comparedToPresets.previousWeek))})
                     </span>
                   </SelectItem>
                 )}
 
                 {comparedToPresets.previousMonth && (
-                  <SelectItem className="group/select-item" value="previousMonth">
+                  <SelectItem value="previousMonth">
                     Last month{' '}
-                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                    <span className="text-gray-600">
                       ({getIstStringFromDate(new Date(comparedToPresets.previousMonth))})
                     </span>
                   </SelectItem>
