@@ -12,6 +12,8 @@ import { Button } from '@/components/ui/button'
 import { CalendarIcon } from 'lucide-react'
 import { getIstStringFromDate } from '@/lib/utils'
 import { MAXIMUM_PREVIOUS_DATA_LOOKUP_ALLOWED_IN_MONTHS } from '@/constants/global'
+import { DistributionChainEntities, UserRole } from '@/types/types'
+import { Label } from '@/components/ui/label'
 
 type TComparedToFilterPresets = {
   previousMonth: number | null
@@ -19,7 +21,7 @@ type TComparedToFilterPresets = {
   yesterday: number | null
 }
 
-export function DashboardComparedToFilter() {
+export function DashboardHeader() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const router = useRouter()
@@ -66,6 +68,14 @@ export function DashboardComparedToFilter() {
   const [selectedCompareOption, setSelectedCompareOption] = useState<
     'previousMonth' | 'previousWeek' | 'yesterday' | 'custom'
   >('previousMonth')
+
+  const [selectedDistrubutionChainEntity, setSelectedDistrubutionChainEntity] = useState<DistributionChainEntities>(
+    (searchParams.get('entity') as DistributionChainEntities) ?? DistributionChainEntities.ADMIN
+  )
+
+  const [selectedUserRole, setSelectedUserRole] = useState<UserRole>(
+    (searchParams.get('role') as UserRole) ?? UserRole.ADMIN
+  )
 
   useEffect(() => {
     const ms = DateTime.fromJSDate(queryParamComparedDate, {
@@ -176,77 +186,120 @@ export function DashboardComparedToFilter() {
       startDate: startDateTimeStamp.toString(),
       endDate: endDateTimeStamp.toString(),
       compareStartDate: compareToStartDateTimeStamp.toString(),
-      compareEndDate: compareToEndDateTimeStamp.toString()
+      compareEndDate: compareToEndDateTimeStamp.toString(),
+      entity: selectedDistrubutionChainEntity,
+      role: selectedUserRole
     })
-  }, [queryParamSelectedDate, queryParamComparedDate, setQueryParams])
+  }, [
+    queryParamSelectedDate,
+    queryParamComparedDate,
+    selectedDistrubutionChainEntity,
+    selectedUserRole,
+    setQueryParams
+  ])
 
   const handleSetCompareDate = (timestamp: number) => {
     setQueryParamComparedDate(new Date(timestamp))
   }
 
   return (
-    <div className="flex items-center gap-3 flex-wrap">
-      <DatePicker
-        queryParamDate={queryParamSelectedDate}
-        setQueryParamDate={setQueryParamSelectedDate}
-        isPending={isPending}
-        queryParamName="startDate"
-        pickerTriggerClassname="h-8"
-      />
-      <p className="text-sm font-medium text-primary/80">compared to</p>
-      <div className="flex flex-row items-center justify-center rounded-lg border border-primary">
+    <div className="flex items-center justify-between flex-wrap">
+      <div className="flex items-center gap-3 flex-wrap">
         <DatePicker
-          queryParamDate={queryParamComparedDate}
-          setQueryParamDate={setQueryParamComparedDate}
+          queryParamDate={queryParamSelectedDate}
+          setQueryParamDate={setQueryParamSelectedDate}
           isPending={isPending}
-          queryParamName="compareStartDate"
-        >
-          <Button id="date" className={`font-normal p-2 h-8 rounded-r-none`} disabled={isPending}>
-            <CalendarIcon className="text-white mr-2 h-4 w-4" />
-            {selectedCompareOption === 'custom' && (
-              <span className="text-white pr-4">{getIstStringFromDate(queryParamComparedDate)}</span>
-            )}
-          </Button>
-        </DatePicker>
+          queryParamName="startDate"
+          pickerTriggerClassname="h-8"
+        />
+        <p className="text-sm font-medium text-primary/80">compared to</p>
+        <div className="flex flex-row items-center justify-center rounded-lg border border-primary">
+          <DatePicker
+            queryParamDate={queryParamComparedDate}
+            setQueryParamDate={setQueryParamComparedDate}
+            isPending={isPending}
+            queryParamName="compareStartDate"
+          >
+            <Button id="date" className={`font-normal p-2 h-8 rounded-r-none`} disabled={isPending}>
+              <CalendarIcon className="text-white mr-2 h-4 w-4" />
+              {selectedCompareOption === 'custom' && (
+                <span className="text-white pr-4">{getIstStringFromDate(queryParamComparedDate)}</span>
+              )}
+            </Button>
+          </DatePicker>
+          <Select
+            value={selectedCompareOption}
+            onValueChange={(e) => handleSetCompareDate(comparedToPresets[e as keyof TComparedToFilterPresets]!)}
+          >
+            <SelectTrigger className="bg-white ring-offset-0 rounded-l-none h-8" disabled={isPending}>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {comparedToPresets.yesterday && (
+                  <SelectItem className="group/select-item" value="yesterday">
+                    Yesterday{' '}
+                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                      ({getIstStringFromDate(new Date(comparedToPresets.yesterday))})
+                    </span>
+                  </SelectItem>
+                )}
+
+                {comparedToPresets.previousWeek && (
+                  <SelectItem className="group/select-item" value="previousWeek">
+                    Last week{' '}
+                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                      ({getIstStringFromDate(new Date(comparedToPresets.previousWeek))})
+                    </span>
+                  </SelectItem>
+                )}
+
+                {comparedToPresets.previousMonth && (
+                  <SelectItem className="group/select-item" value="previousMonth">
+                    Last month{' '}
+                    <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
+                      ({getIstStringFromDate(new Date(comparedToPresets.previousMonth))})
+                    </span>
+                  </SelectItem>
+                )}
+
+                {Object.values(comparedToPresets).every((v) => !v) && (
+                  <p className="p-4 text-sm font-medium">No possible presets available.</p>
+                )}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
+
+      <div className="flex gap-3 items-center justify-center">
+        <Label htmlFor="entity">Entity:</Label>
         <Select
-          value={selectedCompareOption}
-          onValueChange={(e) => handleSetCompareDate(comparedToPresets[e as keyof TComparedToFilterPresets]!)}
+          value={selectedDistrubutionChainEntity}
+          onValueChange={(e) => setSelectedDistrubutionChainEntity(e as DistributionChainEntities)}
         >
-          <SelectTrigger className="bg-white ring-offset-0 rounded-l-none h-8" disabled={isPending}>
+          <SelectTrigger className="bg-white ring-offset-0 h-8" disabled={isPending} id="entity">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {comparedToPresets.yesterday && (
-                <SelectItem className="group/select-item" value="yesterday">
-                  Yesterday{' '}
-                  <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
-                    ({getIstStringFromDate(new Date(comparedToPresets.yesterday))})
-                  </span>
-                </SelectItem>
-              )}
+              <SelectItem value={DistributionChainEntities.ADMIN}>Admin</SelectItem>
+              <SelectItem value={DistributionChainEntities.DISTRIBUTOR}>Distributor</SelectItem>
+              <SelectItem value={DistributionChainEntities.RETAILER}>Retailer</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
 
-              {comparedToPresets.previousWeek && (
-                <SelectItem className="group/select-item" value="previousWeek">
-                  Last week{' '}
-                  <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
-                    ({getIstStringFromDate(new Date(comparedToPresets.previousWeek))})
-                  </span>
-                </SelectItem>
-              )}
-
-              {comparedToPresets.previousMonth && (
-                <SelectItem className="group/select-item" value="previousMonth">
-                  Last month{' '}
-                  <span className="text-gray-600 group-hover/select-item:text-gray-200 group-focus/select-item:text-gray-200">
-                    ({getIstStringFromDate(new Date(comparedToPresets.previousMonth))})
-                  </span>
-                </SelectItem>
-              )}
-
-              {Object.values(comparedToPresets).every((v) => !v) && (
-                <p className="p-4 text-sm font-medium">No possible presets available.</p>
-              )}
+        <Label htmlFor="entity">Role:</Label>
+        <Select value={selectedUserRole} onValueChange={(e) => setSelectedUserRole(e as UserRole)}>
+          <SelectTrigger className="bg-white ring-offset-0 h-8" disabled={isPending}>
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value={UserRole.ADMIN}>Admin</SelectItem>
+              <SelectItem value={UserRole.OPERATION_MANAGER}>Operation Manager</SelectItem>
+              <SelectItem value={UserRole.SALES_HEAD}>Sales Head</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

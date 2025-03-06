@@ -39,7 +39,7 @@ export default async function RootLayout({
           <main className="w-full">
             <div className="flex items-center justify-between py-2">
               <SidebarTrigger />
-              <Avatar className="bg-black mr-4" />
+              <Avatar className="bg-black mr-4 w-8 h-8" />
             </div>
             <Separator />
             {children}

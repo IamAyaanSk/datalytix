@@ -34,10 +34,10 @@ export function TabbedChart<T extends string>({
   chartCardClassName
 }: TTabbedineChartProps<T>) {
   return (
-    <Card className={cn('border border-primary/60', chartCardClassName)}>
+    <Card className={cn('border border-primary/30', chartCardClassName)}>
       <CardHeader className="flex flex-row justify-between items-center">
         <div>
-          <CardTitle className="text-blue-800 text-lg font-medium">{title}</CardTitle>
+          <CardTitle className="text-lg font-medium">{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </div>
         {!isChartDataEmpty && (
@@ -61,7 +61,7 @@ export function TabbedChart<T extends string>({
             {children}
           </ChartContainer>
         ) : (
-          <DashboardComponentEmptyState message="No transaction data available" />
+          <DashboardComponentEmptyState message="No product data available" />
         )}
       </CardContent>
     </Card>

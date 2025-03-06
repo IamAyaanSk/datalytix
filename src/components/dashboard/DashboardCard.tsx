@@ -85,12 +85,12 @@ export const DashboardCard = ({
   return (
     <Card
       className={cn(
-        `flex flex-col justify-evenly min-w-[18rem] sm:min-w-[20rem] lg:min-w-[23rem] border shadow-md font-sans py-3 border-primary/60`,
+        `flex flex-col justify-evenly min-w-[18rem] sm:min-w-[20rem] lg:min-w-[23rem] border font-sans py-3 border-primary/30`,
         className
       )}
     >
       <CardHeader className="py-0">
-        <CardTitle className="text-blue-800 text-lg font-medium">{title}</CardTitle>
+        <CardTitle className="text-lg font-medium">{title}</CardTitle>
       </CardHeader>
       <CardContent className="py-0 space-y-3">
         <h3

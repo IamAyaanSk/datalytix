@@ -1,4 +1,4 @@
-import { Home, Database, TableProperties, LayoutDashboard } from 'lucide-react'
+import { Database, LayoutDashboard, Info } from 'lucide-react'
 
 import {
   Sidebar,
@@ -16,19 +16,14 @@ import { Separator } from '@/components/ui/separator'
 const items = {
   components: [
     {
-      title: 'Home',
-      url: '/',
-      icon: Home
-    },
-    {
       title: 'Dashboard',
       url: '/dashboard',
       icon: LayoutDashboard
     },
     {
-      title: 'Table',
+      title: 'Info',
       url: '#',
-      icon: TableProperties
+      icon: Info
     }
   ]
 }
@@ -40,7 +35,7 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem className="py-1">
             <SidebarMenuButton className="w-fit hover:bg-transparent active:bg-transparent" asChild>
-              <a href="/">
+              <a href="/dashboard">
                 {/* TODO: Replace this with logo */}
                 <Database />
                 <h1 className="text-xl font-bold">DataLytix</h1>

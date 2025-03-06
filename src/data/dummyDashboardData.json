@@ -1,0 +1,1592 @@
+[
+  {
+    "soldProductsCountAndAmountData": {
+      "status": "success",
+      "data": {
+        "selectedDateData": {
+          "REFRIGIRATOR": { "count": 50, "amount": 125000 },
+          "WASHING_MACHINE": { "count": 30, "amount": 90000 },
+          "TELIVISION": { "count": 40, "amount": 160000 },
+          "AIR_CONDITIONER": { "count": 20, "amount": 80000 },
+          "MICROWAVE": { "count": 25, "amount": 37500 },
+          "ALL": { "count": 165, "amount": 492500 }
+        },
+        "compareDateData": {
+          "REFRIGIRATOR": { "count": 45, "amount": 112500 },
+          "WASHING_MACHINE": { "count": 28, "amount": 84000 },
+          "TELIVISION": { "count": 35, "amount": 140000 },
+          "AIR_CONDITIONER": { "count": 18, "amount": 72000 },
+          "MICROWAVE": { "count": 20, "amount": 30000 },
+          "ALL": { "count": 146, "amount": 438500 }
+        },
+        "growth": {
+          "soldProductsCount": { "percentage": 13.0, "isNegative": false },
+          "soldProductsAmount": { "percentage": 12.3, "isNegative": false }
+        }
+      }
+    },
+    "profitData": {
+      "status": "success",
+      "data": {
+        "selectedDateProfit": 150000,
+        "compareDateProfit": 140000,
+        "growth": { "percentage": 7.14, "isNegative": false }
+      }
+    },
+    "distributionChainProfitData": {
+      "status": "success",
+      "data": {
+        "DISTRIBUTOR": {
+          "selectedDateProfit": 50000,
+          "compareDateProfit": 48000,
+          "growth": { "percentage": 4.17, "isNegative": false }
+        },
+        "WHOLESELLER": {
+          "selectedDateProfit": 40000,
+          "compareDateProfit": 35000,
+          "growth": { "percentage": 14.29, "isNegative": false }
+        },
+        "RETAILER": {
+          "selectedDateProfit": 60000,
+          "compareDateProfit": 57000,
+          "growth": { "percentage": 5.26, "isNegative": false }
+        }
+      }
+    },
+    "recentComplaintTicketsData": {
+      "status": "success",
+      "data": [
+        {
+          "title": "Refrigerator Door Issue",
+          "status": "PENDING",
+          "description": "The refrigerator door doesn't seal properly causing cool air leakage",
+          "customer": { "name": "Michael Green", "email": "michael.green@example.com" },
+          "createdAt": "2023-09-10T08:30:00.000Z"
+        },
+        {
+          "title": "Washing Machine Drum Noise",
+          "status": "IN_PROGRESS",
+          "description": "Loud noise during the spin cycle",
+          "customer": { "name": "Laura White", "email": "laura.white@example.com" },
+          "createdAt": "2023-09-11T10:45:00.000Z"
+        },
+        {
+          "title": "TV Screen Flicker",
+          "status": "RESOLVED",
+          "description": "Occasional flickering on LED TV",
+          "customer": { "name": "David Brown", "email": "david.brown@example.com" },
+          "createdAt": "2023-09-12T14:00:00.000Z"
+        },
+        {
+          "title": "Air Conditioner Leak",
+          "status": "IN_PROGRESS",
+          "description": "Water leakage noticed from the unit",
+          "customer": { "name": "Scarlett Johansson", "email": "scarlett.johansson@example.com" },
+          "createdAt": "2023-09-13T15:30:00.000Z"
+        }
+      ]
+    },
+    "productShippedAndManufacturedData": {
+      "status": "success",
+      "data": {
+        "manufacturedCount": 200,
+        "shippedCount": 190
+      }
+    },
+    "distributionChainUnitsSoldData": {
+      "status": "success",
+      "data": {
+        "ADMIN": { "count": 15, "amount": 20000 },
+        "DISTRIBUTOR": { "count": 40, "amount": 90000 },
+        "WHOLESELLER": { "count": 35, "amount": 80000 },
+        "RETAILER": { "count": 75, "amount": 130000 }
+      }
+    },
+    "factorytWiseManufacturedProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "DELHI",
+          "REFRIGIRATORCount": 25,
+          "REFRIGIRATORAmount": 22500,
+          "WASHING_MACHINECount": 25,
+          "WASHING_MACHINEAmount": 15000,
+          "TELIVISIONCount": 10,
+          "TELIVISIONAmount": 1000,
+          "AIR_CONDITIONERCount": 10,
+          "AIR_CONDITIONERAmount": 4000,
+          "MICROWAVECount": 12,
+          "MICROWAVEAmount": 18000
+        },
+        {
+          "name": "KASHMIR",
+          "REFRIGIRATORCount": 2,
+          "REFRIGIRATORAmount": 62500,
+          "WASHING_MACHINECount": 15,
+          "WASHING_MACHINEAmount": 55000,
+          "TELIVISIONCount": 10,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 40,
+          "AIR_CONDITIONERAmount": 30000,
+          "MICROWAVECount": 32,
+          "MICROWAVEAmount": 48000
+        },
+        {
+          "name": "TAMIL_NADU",
+          "REFRIGIRATORCount": 31,
+          "REFRIGIRATORAmount": 32500,
+          "WASHING_MACHINECount": 45,
+          "WASHING_MACHINEAmount": 35000,
+          "TELIVISIONCount": 10,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 8,
+          "AIR_CONDITIONERAmount": 4000,
+          "MICROWAVECount": 31,
+          "MICROWAVEAmount": 108000
+        },
+        {
+          "name": "GUJARAT",
+          "REFRIGIRATORCount": 25,
+          "REFRIGIRATORAmount": 62500,
+          "WASHING_MACHINECount": 15,
+          "WASHING_MACHINEAmount": 45000,
+          "TELIVISIONCount": 20,
+          "TELIVISIONAmount": 80000,
+          "AIR_CONDITIONERCount": 10,
+          "AIR_CONDITIONERAmount": 40000,
+          "MICROWAVECount": 13,
+          "MICROWAVEAmount": 19500
+        }
+      ]
+    },
+    "salesPersonSummaryData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "Emma Stone",
+          "soldProductCount": 80,
+          "soldProductAmount": 160000,
+          "distributionChainEntitiesOnboarded": 4,
+          "DELHI-Count": 30,
+          "DELHI-Amount": 60000,
+          "KASHMIR-Count": 25,
+          "KASHMIR-Amount": 50000,
+          "TAMIL_NADU-Count": 25,
+          "TAMIL_NADU-Amount": 50000
+        },
+        {
+          "name": "Liam Johnson",
+          "soldProductCount": 70,
+          "soldProductAmount": 140000,
+          "distributionChainEntitiesOnboarded": 3,
+          "GUJARAT-Count": 35,
+          "GUJARAT-Amount": 70000,
+          "DELHI-Count": 20,
+          "DELHI-Amount": 40000,
+          "KASHMIR-Count": 15,
+          "KASHMIR-Amount": 30000
+        }
+      ]
+    },
+    "hourlySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "hour": "8 AM",
+          "REFRIGIRATORCount": 5,
+          "REFRIGIRATORAmount": 12500,
+          "WASHING_MACHINECount": 3,
+          "WASHING_MACHINEAmount": 9000,
+          "TELIVISIONCount": 4,
+          "TELIVISIONAmount": 16000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 4500
+        },
+        {
+          "hour": "9 AM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "10 AM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "11 AM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "12 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "1 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "2 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "3 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "4 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "5 PM",
+          "REFRIGIRATORCount": 7,
+          "REFRIGIRATORAmount": 17500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 5,
+          "TELIVISIONAmount": 20000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "6 PM",
+          "REFRIGIRATORCount": 6,
+          "REFRIGIRATORAmount": 15000,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 6,
+          "TELIVISIONAmount": 24000,
+          "AIR_CONDITIONERCount": 3,
+          "AIR_CONDITIONERAmount": 12000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "7 PM",
+          "REFRIGIRATORCount": 8,
+          "REFRIGIRATORAmount": 20000,
+          "WASHING_MACHINECount": 5,
+          "WASHING_MACHINEAmount": 15000,
+          "TELIVISIONCount": 7,
+          "TELIVISIONAmount": 28000,
+          "AIR_CONDITIONERCount": 4,
+          "AIR_CONDITIONERAmount": 16000,
+          "MICROWAVECount": 4,
+          "MICROWAVEAmount": 3500
+        },
+        {
+          "hour": "8 PM",
+          "REFRIGIRATORCount": 5,
+          "REFRIGIRATORAmount": 12500,
+          "WASHING_MACHINECount": 3,
+          "WASHING_MACHINEAmount": 9000,
+          "TELIVISIONCount": 4,
+          "TELIVISIONAmount": 16000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        }
+      ]
+    },
+    "dailySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthCount": 30,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 300000,
+          "previousMonthAmount": 280000
+        },
+        {
+          "day": "2",
+          "currentMonthCount": 35,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 350000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "3",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "4",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "5",
+          "currentMonthCount": 34,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "6",
+          "currentMonthCount": 20,
+          "previousMonthCount": 18,
+          "currentMonthAmount": 600000,
+          "previousMonthAmount": 780000
+        },
+        {
+          "day": "7",
+          "currentMonthCount": 45,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 360000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "8",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "9",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "10",
+          "currentMonthCount": 14,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "11",
+          "currentMonthCount": 10,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 200000,
+          "previousMonthAmount": 180000
+        },
+        {
+          "day": "12",
+          "currentMonthCount": 25,
+          "previousMonthCount": 53,
+          "currentMonthAmount": 50000,
+          "previousMonthAmount": 230000
+        },
+        {
+          "day": "13",
+          "currentMonthCount": 31,
+          "previousMonthCount": 10,
+          "currentMonthAmount": 620000,
+          "previousMonthAmount": 400000
+        },
+        {
+          "day": "14",
+          "currentMonthCount": 48,
+          "previousMonthCount": 47,
+          "currentMonthAmount": 480000,
+          "previousMonthAmount": 870000
+        },
+        {
+          "day": "15",
+          "currentMonthCount": 24,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 440000,
+          "previousMonthAmount": 830000
+        },
+        {
+          "day": "16",
+          "currentMonthCount": 10,
+          "previousMonthCount": 48,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 580000
+        },
+        {
+          "day": "17",
+          "currentMonthCount": 25,
+          "previousMonthCount": 13,
+          "currentMonthAmount": 250000,
+          "previousMonthAmount": 390000
+        },
+        {
+          "day": "18",
+          "currentMonthCount": 32,
+          "previousMonthCount": 20,
+          "currentMonthAmount": 330000,
+          "previousMonthAmount": 340000
+        },
+        {
+          "day": "19",
+          "currentMonthCount": 21,
+          "previousMonthCount": 23,
+          "currentMonthAmount": 230000,
+          "previousMonthAmount": 240000
+        },
+        {
+          "day": "20",
+          "currentMonthCount": 31,
+          "previousMonthCount": 34,
+          "currentMonthAmount": 740000,
+          "previousMonthAmount": 830000
+        }
+      ]
+    },
+    "dailySelfProfitData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthProfit": 7178,
+          "previousMonthProfit": 6673
+        },
+        {
+          "day": "2",
+          "currentMonthProfit": 7393,
+          "previousMonthProfit": 6897
+        },
+        {
+          "day": "3",
+          "currentMonthProfit": 7605,
+          "previousMonthProfit": 7218
+        },
+        {
+          "day": "4",
+          "currentMonthProfit": 7724,
+          "previousMonthProfit": 7525
+        },
+        {
+          "day": "5",
+          "currentMonthProfit": 8041,
+          "previousMonthProfit": 7698
+        },
+        {
+          "day": "6",
+          "currentMonthProfit": 8354,
+          "previousMonthProfit": 7931
+        },
+        {
+          "day": "7",
+          "currentMonthProfit": 8842,
+          "previousMonthProfit": 8333
+        },
+        {
+          "day": "8",
+          "currentMonthProfit": 9271,
+          "previousMonthProfit": 8596
+        },
+        {
+          "day": "9",
+          "currentMonthProfit": 9728,
+          "previousMonthProfit": 8723
+        },
+        {
+          "day": "10",
+          "currentMonthProfit": 9963,
+          "previousMonthProfit": 9085
+        },
+        {
+          "day": "11",
+          "currentMonthProfit": 10378,
+          "previousMonthProfit": 9283
+        },
+        {
+          "day": "12",
+          "currentMonthProfit": 10564,
+          "previousMonthProfit": 9622
+        },
+        {
+          "day": "13",
+          "currentMonthProfit": 10841,
+          "previousMonthProfit": 9926
+        },
+        {
+          "day": "14",
+          "currentMonthProfit": 10987,
+          "previousMonthProfit": 10081
+        },
+        {
+          "day": "15",
+          "currentMonthProfit": 11483,
+          "previousMonthProfit": 10230
+        },
+        {
+          "day": "16",
+          "currentMonthProfit": 11717,
+          "previousMonthProfit": 10483
+        },
+        {
+          "day": "17",
+          "currentMonthProfit": 12010,
+          "previousMonthProfit": 10719
+        },
+        {
+          "day": "18",
+          "currentMonthProfit": 12461,
+          "previousMonthProfit": 11103
+        },
+        {
+          "day": "19",
+          "currentMonthProfit": 12627,
+          "previousMonthProfit": 11326
+        },
+        {
+          "day": "20",
+          "currentMonthProfit": 13111,
+          "previousMonthProfit": 11575
+        }
+      ]
+    },
+    "averageSoldProductCountAndAmountForCurrentMonthData": {
+      "status": "success",
+      "data": { "averageCount": 32, "averageAmount": 320000 }
+    }
+  },
+  {
+    "soldProductsCountAndAmountData": {
+      "status": "success",
+      "data": {
+        "selectedDateData": {
+          "REFRIGIRATOR": { "count": 20, "amount": 50000 },
+          "WASHING_MACHINE": { "count": 15, "amount": 45000 },
+          "TELIVISION": { "count": 18, "amount": 54000 },
+          "AIR_CONDITIONER": { "count": 10, "amount": 30000 },
+          "MICROWAVE": { "count": 12, "amount": 36000 },
+          "ALL": { "count": 75, "amount": 215000 }
+        },
+        "compareDateData": {
+          "REFRIGIRATOR": { "count": 18, "amount": 45000 },
+          "WASHING_MACHINE": { "count": 14, "amount": 42000 },
+          "TELIVISION": { "count": 16, "amount": 48000 },
+          "AIR_CONDITIONER": { "count": 9, "amount": 27000 },
+          "MICROWAVE": { "count": 10, "amount": 30000 },
+          "ALL": { "count": 67, "amount": 192000 }
+        },
+        "growth": {
+          "soldProductsCount": { "percentage": 12.0, "isNegative": false },
+          "soldProductsAmount": { "percentage": 12.0, "isNegative": false }
+        }
+      }
+    },
+    "profitData": {
+      "status": "error",
+      "message": "Profit data temporarily unavailable"
+    },
+    "distributionChainProfitData": {
+      "status": "success",
+      "data": {
+        "RETAILER": {
+          "selectedDateProfit": 35000,
+          "compareDateProfit": 33000,
+          "growth": { "percentage": 6.06, "isNegative": false }
+        }
+      }
+    },
+    "recentComplaintTicketsData": {
+      "status": "success",
+      "data": [
+        {
+          "title": "Microwave Malfunction",
+          "status": "IN_PROGRESS",
+          "description": "Microwave stops heating intermittently",
+          "customer": { "name": "Sophia Lee", "email": "sophia.lee@example.com" },
+          "createdAt": "2023-09-12T16:00:00.000Z"
+        }
+      ]
+    },
+    "productShippedAndManufacturedData": {
+      "status": "success",
+      "data": { "manufacturedCount": 120, "shippedCount": 110 }
+    },
+    "distributionChainUnitsSoldData": {
+      "status": "error",
+      "message": "Units sold data not available"
+    },
+    "factorytWiseManufacturedProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "KASHMIR",
+          "REFRIGIRATORCount": 10,
+          "REFRIGIRATORAmount": 25000,
+          "WASHING_MACHINECount": 8,
+          "WASHING_MACHINEAmount": 24000,
+          "TELIVISIONCount": 12,
+          "TELIVISIONAmount": 48000,
+          "AIR_CONDITIONERCount": 6,
+          "AIR_CONDITIONERAmount": 18000,
+          "MICROWAVECount": 7,
+          "MICROWAVEAmount": 10500
+        }
+      ]
+    },
+    "salesPersonSummaryData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "Olivia Brown",
+          "soldProductCount": 60,
+          "soldProductAmount": 120000,
+          "distributionChainEntitiesOnboarded": 2,
+          "TAMIL_NADU-Count": 20,
+          "TAMIL_NADU-Amount": 40000,
+          "GUJARAT-Count": 25,
+          "GUJARAT-Amount": 50000,
+          "DELHI-Count": 15,
+          "DELHI-Amount": 30000
+        },
+        {
+          "name": "Noah Wilson",
+          "soldProductCount": 100,
+          "soldProductAmount": 220000,
+          "distributionChainEntitiesOnboarded": 5,
+          "TAMIL_NADU-Count": 40,
+          "TAMIL_NADU-Amount": 88000,
+          "KASHMIR-Count": 30,
+          "KASHMIR-Amount": 66000,
+          "DELHI-Count": 30,
+          "DELHI-Amount": 66000
+        },
+        {
+          "name": "Ava Martinez",
+          "soldProductCount": 90,
+          "soldProductAmount": 200000,
+          "distributionChainEntitiesOnboarded": 4,
+          "GUJARAT-Count": 35,
+          "GUJARAT-Amount": 77000,
+          "DELHI-Count": 25,
+          "DELHI-Amount": 55000,
+          "TAMIL_NADU-Count": 30,
+          "TAMIL_NADU-Amount": 68000
+        },
+        {
+          "name": "Sam Johnson",
+          "soldProductCount": 10,
+          "soldProductAmount": 300000,
+          "distributionChainEntitiesOnboarded": 1,
+          "GUJARAT-Count": 25,
+          "GUJARAT-Amount": 37000,
+          "DELHI-Count": 45,
+          "DELHI-Amount": 85000,
+          "TAMIL_NADU-Count": 10,
+          "TAMIL_NADU-Amount": 28000
+        }
+      ]
+    },
+    "hourlySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "hour": "7 AM",
+          "REFRIGIRATORCount": 3,
+          "REFRIGIRATORAmount": 7500,
+          "WASHING_MACHINECount": 2,
+          "WASHING_MACHINEAmount": 6000,
+          "TELIVISIONCount": 2,
+          "TELIVISIONAmount": 8000,
+          "AIR_CONDITIONERCount": 1,
+          "AIR_CONDITIONERAmount": 4000,
+          "MICROWAVECount": 2,
+          "MICROWAVEAmount": 3000
+        },
+        {
+          "hour": "8 AM",
+          "REFRIGIRATORCount": 4,
+          "REFRIGIRATORAmount": 10000,
+          "WASHING_MACHINECount": 3,
+          "WASHING_MACHINEAmount": 9000,
+          "TELIVISIONCount": 3,
+          "TELIVISIONAmount": 12000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 4500
+        },
+        {
+          "hour": "9 AM",
+          "REFRIGIRATORCount": 4,
+          "REFRIGIRATORAmount": 10000,
+          "WASHING_MACHINECount": 3,
+          "WASHING_MACHINEAmount": 9000,
+          "TELIVISIONCount": 3,
+          "TELIVISIONAmount": 12000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 4500
+        },
+        {
+          "hour": "10 AM",
+          "REFRIGIRATORCount": 5,
+          "REFRIGIRATORAmount": 12500,
+          "WASHING_MACHINECount": 3,
+          "WASHING_MACHINEAmount": 9000,
+          "TELIVISIONCount": 4,
+          "TELIVISIONAmount": 16000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 4500
+        },
+        {
+          "hour": "11 AM",
+          "REFRIGIRATORCount": 5,
+          "REFRIGIRATORAmount": 12500,
+          "WASHING_MACHINECount": 4,
+          "WASHING_MACHINEAmount": 12000,
+          "TELIVISIONCount": 4,
+          "TELIVISIONAmount": 16000,
+          "AIR_CONDITIONERCount": 2,
+          "AIR_CONDITIONERAmount": 8000,
+          "MICROWAVECount": 3,
+          "MICROWAVEAmount": 4500
+        }
+      ]
+    },
+    "dailySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthCount": 30,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 300000,
+          "previousMonthAmount": 280000
+        },
+        {
+          "day": "2",
+          "currentMonthCount": 35,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 350000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "3",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "4",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "5",
+          "currentMonthCount": 34,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "6",
+          "currentMonthCount": 20,
+          "previousMonthCount": 18,
+          "currentMonthAmount": 600000,
+          "previousMonthAmount": 780000
+        },
+        {
+          "day": "7",
+          "currentMonthCount": 45,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 360000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "8",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "9",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "10",
+          "currentMonthCount": 14,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "11",
+          "currentMonthCount": 10,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 200000,
+          "previousMonthAmount": 180000
+        },
+        {
+          "day": "12",
+          "currentMonthCount": 25,
+          "previousMonthCount": 53,
+          "currentMonthAmount": 50000,
+          "previousMonthAmount": 230000
+        },
+        {
+          "day": "13",
+          "currentMonthCount": 31,
+          "previousMonthCount": 10,
+          "currentMonthAmount": 620000,
+          "previousMonthAmount": 400000
+        },
+        {
+          "day": "14",
+          "currentMonthCount": 48,
+          "previousMonthCount": 47,
+          "currentMonthAmount": 480000,
+          "previousMonthAmount": 870000
+        },
+        {
+          "day": "15",
+          "currentMonthCount": 24,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 440000,
+          "previousMonthAmount": 830000
+        },
+        {
+          "day": "16",
+          "currentMonthCount": 10,
+          "previousMonthCount": 48,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 580000
+        },
+        {
+          "day": "17",
+          "currentMonthCount": 25,
+          "previousMonthCount": 13,
+          "currentMonthAmount": 250000,
+          "previousMonthAmount": 390000
+        },
+        {
+          "day": "18",
+          "currentMonthCount": 32,
+          "previousMonthCount": 20,
+          "currentMonthAmount": 330000,
+          "previousMonthAmount": 340000
+        },
+        {
+          "day": "19",
+          "currentMonthCount": 21,
+          "previousMonthCount": 23,
+          "currentMonthAmount": 230000,
+          "previousMonthAmount": 240000
+        },
+        {
+          "day": "20",
+          "currentMonthCount": 31,
+          "previousMonthCount": 34,
+          "currentMonthAmount": 740000,
+          "previousMonthAmount": 830000
+        }
+      ]
+    },
+    "dailySelfProfitData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthProfit": 7178,
+          "previousMonthProfit": 6673
+        },
+        {
+          "day": "2",
+          "currentMonthProfit": 7393,
+          "previousMonthProfit": 6897
+        },
+        {
+          "day": "3",
+          "currentMonthProfit": 7605,
+          "previousMonthProfit": 7218
+        },
+        {
+          "day": "4",
+          "currentMonthProfit": 7724,
+          "previousMonthProfit": 7525
+        },
+        {
+          "day": "5",
+          "currentMonthProfit": 8041,
+          "previousMonthProfit": 7698
+        },
+        {
+          "day": "6",
+          "currentMonthProfit": 8354,
+          "previousMonthProfit": 7931
+        },
+        {
+          "day": "7",
+          "currentMonthProfit": 8842,
+          "previousMonthProfit": 8333
+        },
+        {
+          "day": "8",
+          "currentMonthProfit": 9271,
+          "previousMonthProfit": 8596
+        },
+        {
+          "day": "9",
+          "currentMonthProfit": 9728,
+          "previousMonthProfit": 8723
+        },
+        {
+          "day": "10",
+          "currentMonthProfit": 9963,
+          "previousMonthProfit": 9085
+        },
+        {
+          "day": "11",
+          "currentMonthProfit": 10378,
+          "previousMonthProfit": 9283
+        },
+        {
+          "day": "12",
+          "currentMonthProfit": 10564,
+          "previousMonthProfit": 9622
+        },
+        {
+          "day": "13",
+          "currentMonthProfit": 10841,
+          "previousMonthProfit": 9926
+        },
+        {
+          "day": "14",
+          "currentMonthProfit": 10987,
+          "previousMonthProfit": 10081
+        },
+        {
+          "day": "15",
+          "currentMonthProfit": 11483,
+          "previousMonthProfit": 10230
+        },
+        {
+          "day": "16",
+          "currentMonthProfit": 11717,
+          "previousMonthProfit": 10483
+        },
+        {
+          "day": "17",
+          "currentMonthProfit": 12010,
+          "previousMonthProfit": 10719
+        },
+        {
+          "day": "18",
+          "currentMonthProfit": 12461,
+          "previousMonthProfit": 11103
+        },
+        {
+          "day": "19",
+          "currentMonthProfit": 12627,
+          "previousMonthProfit": 11326
+        },
+        {
+          "day": "20",
+          "currentMonthProfit": 13111,
+          "previousMonthProfit": 11575
+        }
+      ]
+    },
+    "averageSoldProductCountAndAmountForCurrentMonthData": {
+      "status": "success",
+      "data": { "averageCount": 38, "averageAmount": 210000 }
+    }
+  },
+  {
+    "soldProductsCountAndAmountData": {
+      "status": "success",
+      "data": {
+        "selectedDateData": {
+          "REFRIGIRATOR": { "count": 60, "amount": 150000 },
+          "WASHING_MACHINE": { "count": 40, "amount": 120000 },
+          "TELIVISION": { "count": 55, "amount": 220000 },
+          "AIR_CONDITIONER": { "count": 25, "amount": 100000 },
+          "MICROWAVE": { "count": 30, "amount": 45000 },
+          "ALL": { "count": 210, "amount": 635000 }
+        },
+        "compareDateData": {
+          "REFRIGIRATOR": { "count": 58, "amount": 145000 },
+          "WASHING_MACHINE": { "count": 38, "amount": 114000 },
+          "TELIVISION": { "count": 50, "amount": 200000 },
+          "AIR_CONDITIONER": { "count": 22, "amount": 88000 },
+          "MICROWAVE": { "count": 28, "amount": 42000 },
+          "ALL": { "count": 196, "amount": 589000 }
+        },
+        "growth": {
+          "soldProductsCount": { "percentage": 7.1, "isNegative": false },
+          "soldProductsAmount": { "percentage": 7.8, "isNegative": false }
+        }
+      }
+    },
+    "profitData": {
+      "status": "success",
+      "data": {
+        "selectedDateProfit": 200000,
+        "compareDateProfit": 190000,
+        "growth": { "percentage": 5.26, "isNegative": false }
+      }
+    },
+    "distributionChainProfitData": {
+      "status": "success",
+      "data": {
+        "ADMIN": {
+          "selectedDateProfit": 10000,
+          "compareDateProfit": 9000,
+          "growth": { "percentage": 11.11, "isNegative": false }
+        },
+        "DISTRIBUTOR": {
+          "selectedDateProfit": 70000,
+          "compareDateProfit": 68000,
+          "growth": { "percentage": 2.94, "isNegative": false }
+        },
+        "WHOLESELLER": {
+          "selectedDateProfit": 60000,
+          "compareDateProfit": 55000,
+          "growth": { "percentage": 9.09, "isNegative": false }
+        },
+        "RETAILER": {
+          "selectedDateProfit": 60000,
+          "compareDateProfit": 68000,
+          "growth": { "percentage": -11.76, "isNegative": true }
+        }
+      }
+    },
+    "recentComplaintTicketsData": {
+      "status": "success",
+      "data": [
+        {
+          "title": "TV Sound Issue",
+          "status": "PENDING",
+          "description": "No sound from the television despite volume being up",
+          "customer": { "name": "Chris Evans", "email": "chris.evans@example.com" },
+          "createdAt": "2023-09-13T12:00:00.000Z"
+        },
+        {
+          "title": "Air Conditioner Leak",
+          "status": "IN_PROGRESS",
+          "description": "Water leakage noticed from the unit",
+          "customer": { "name": "Scarlett Johansson", "email": "scarlett.johansson@example.com" },
+          "createdAt": "2023-09-13T15:30:00.000Z"
+        }
+      ]
+    },
+    "productShippedAndManufacturedData": {
+      "status": "success",
+      "data": {
+        "manufacturedCount": 250,
+        "shippedCount": 240
+      }
+    },
+    "distributionChainUnitsSoldData": {
+      "status": "success",
+      "data": {
+        "ADMIN": { "count": 20, "amount": 25000 },
+        "DISTRIBUTOR": { "count": 50, "amount": 120000 },
+        "WHOLESELLER": { "count": 45, "amount": 110000 },
+        "RETAILER": { "count": 95, "amount": 200000 }
+      }
+    },
+    "factorytWiseManufacturedProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "TAMIL_NADU",
+          "REFRIGIRATORCount": 30,
+          "REFRIGIRATORAmount": 75000,
+          "WASHING_MACHINECount": 20,
+          "WASHING_MACHINEAmount": 60000,
+          "TELIVISIONCount": 25,
+          "TELIVISIONAmount": 100000,
+          "AIR_CONDITIONERCount": 15,
+          "AIR_CONDITIONERAmount": 60000,
+          "MICROWAVECount": 18,
+          "MICROWAVEAmount": 27000
+        },
+        {
+          "name": "KASHMIR",
+          "REFRIGIRATORCount": 30,
+          "REFRIGIRATORAmount": 75000,
+          "WASHING_MACHINECount": 18,
+          "WASHING_MACHINEAmount": 54000,
+          "TELIVISIONCount": 30,
+          "TELIVISIONAmount": 120000,
+          "AIR_CONDITIONERCount": 10,
+          "AIR_CONDITIONERAmount": 40000,
+          "MICROWAVECount": 12,
+          "MICROWAVEAmount": 18000
+        },
+        {
+          "name": "DELHI",
+          "REFRIGIRATORCount": 10,
+          "REFRIGIRATORAmount": 35000,
+          "WASHING_MACHINECount": 14,
+          "WASHING_MACHINEAmount": 64000,
+          "TELIVISIONCount": 40,
+          "TELIVISIONAmount": 220000,
+          "AIR_CONDITIONERCount": 10,
+          "AIR_CONDITIONERAmount": 30000,
+          "MICROWAVECount": 15,
+          "MICROWAVEAmount": 28000
+        }
+      ]
+    },
+    "salesPersonSummaryData": {
+      "status": "success",
+      "data": [
+        {
+          "name": "Noah Wilson",
+          "soldProductCount": 100,
+          "soldProductAmount": 220000,
+          "distributionChainEntitiesOnboarded": 5,
+          "TAMIL_NADU-Count": 40,
+          "TAMIL_NADU-Amount": 88000,
+          "KASHMIR-Count": 30,
+          "KASHMIR-Amount": 66000,
+          "DELHI-Count": 30,
+          "DELHI-Amount": 66000
+        },
+        {
+          "name": "Ava Martinez",
+          "soldProductCount": 90,
+          "soldProductAmount": 200000,
+          "distributionChainEntitiesOnboarded": 4,
+          "GUJARAT-Count": 35,
+          "GUJARAT-Amount": 77000,
+          "DELHI-Count": 25,
+          "DELHI-Amount": 55000,
+          "TAMIL_NADU-Count": 30,
+          "TAMIL_NADU-Amount": 68000
+        },
+        {
+          "name": "Sam Johnson",
+          "soldProductCount": 10,
+          "soldProductAmount": 300000,
+          "distributionChainEntitiesOnboarded": 1,
+          "GUJARAT-Count": 25,
+          "GUJARAT-Amount": 37000,
+          "DELHI-Count": 45,
+          "DELHI-Amount": 85000,
+          "TAMIL_NADU-Count": 10,
+          "TAMIL_NADU-Amount": 28000
+        },
+        {
+          "name": "Ava Maxwell",
+          "soldProductCount": 40,
+          "soldProductAmount": 500000,
+          "distributionChainEntitiesOnboarded": 4,
+          "GUJARAT-Count": 25,
+          "GUJARAT-Amount": 97000,
+          "DELHI-Count": 35,
+          "DELHI-Amount": 85000,
+          "TAMIL_NADU-Count": 10,
+          "TAMIL_NADU-Amount": 28000
+        }
+      ]
+    },
+    "hourlySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "hour": "10 AM",
+          "REFRIGIRATORCount": 8,
+          "REFRIGIRATORAmount": 20000,
+          "WASHING_MACHINECount": 6,
+          "WASHING_MACHINEAmount": 18000,
+          "TELIVISIONCount": 7,
+          "TELIVISIONAmount": 28000,
+          "AIR_CONDITIONERCount": 4,
+          "AIR_CONDITIONERAmount": 16000,
+          "MICROWAVECount": 5,
+          "MICROWAVEAmount": 7500
+        },
+        {
+          "hour": "11 AM",
+          "REFRIGIRATORCount": 9,
+          "REFRIGIRATORAmount": 22500,
+          "WASHING_MACHINECount": 7,
+          "WASHING_MACHINEAmount": 21000,
+          "TELIVISIONCount": 8,
+          "TELIVISIONAmount": 32000,
+          "AIR_CONDITIONERCount": 5,
+          "AIR_CONDITIONERAmount": 20000,
+          "MICROWAVECount": 4,
+          "MICROWAVEAmount": 6000
+        },
+        {
+          "hour": "12 PM",
+          "REFRIGIRATORCount": 10,
+          "REFRIGIRATORAmount": 25000,
+          "WASHING_MACHINECount": 7,
+          "WASHING_MACHINEAmount": 21000,
+          "TELIVISIONCount": 8,
+          "TELIVISIONAmount": 32000,
+          "AIR_CONDITIONERCount": 5,
+          "AIR_CONDITIONERAmount": 20000,
+          "MICROWAVECount": 5,
+          "MICROWAVEAmount": 7500
+        },
+        {
+          "hour": "1 PM",
+          "REFRIGIRATORCount": 9,
+          "REFRIGIRATORAmount": 22500,
+          "WASHING_MACHINECount": 6,
+          "WASHING_MACHINEAmount": 18000,
+          "TELIVISIONCount": 7,
+          "TELIVISIONAmount": 28000,
+          "AIR_CONDITIONERCount": 4,
+          "AIR_CONDITIONERAmount": 16000,
+          "MICROWAVECount": 4,
+          "MICROWAVEAmount": 6000
+        },
+        {
+          "hour": "2 PM",
+          "REFRIGIRATORCount": 8,
+          "REFRIGIRATORAmount": 20000,
+          "WASHING_MACHINECount": 6,
+          "WASHING_MACHINEAmount": 18000,
+          "TELIVISIONCount": 7,
+          "TELIVISIONAmount": 28000,
+          "AIR_CONDITIONERCount": 4,
+          "AIR_CONDITIONERAmount": 16000,
+          "MICROWAVECount": 4,
+          "MICROWAVEAmount": 6000
+        }
+      ]
+    },
+    "dailySoldProductCountAndAmountData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthCount": 30,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 300000,
+          "previousMonthAmount": 280000
+        },
+        {
+          "day": "2",
+          "currentMonthCount": 35,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 350000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "3",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "4",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "5",
+          "currentMonthCount": 34,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "6",
+          "currentMonthCount": 20,
+          "previousMonthCount": 18,
+          "currentMonthAmount": 600000,
+          "previousMonthAmount": 780000
+        },
+        {
+          "day": "7",
+          "currentMonthCount": 45,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 360000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "8",
+          "currentMonthCount": 32,
+          "previousMonthCount": 30,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 300000
+        },
+        {
+          "day": "9",
+          "currentMonthCount": 28,
+          "previousMonthCount": 27,
+          "currentMonthAmount": 280000,
+          "previousMonthAmount": 270000
+        },
+        {
+          "day": "10",
+          "currentMonthCount": 14,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 340000,
+          "previousMonthAmount": 330000
+        },
+        {
+          "day": "11",
+          "currentMonthCount": 10,
+          "previousMonthCount": 28,
+          "currentMonthAmount": 200000,
+          "previousMonthAmount": 180000
+        },
+        {
+          "day": "12",
+          "currentMonthCount": 25,
+          "previousMonthCount": 53,
+          "currentMonthAmount": 50000,
+          "previousMonthAmount": 230000
+        },
+        {
+          "day": "13",
+          "currentMonthCount": 31,
+          "previousMonthCount": 10,
+          "currentMonthAmount": 620000,
+          "previousMonthAmount": 400000
+        },
+        {
+          "day": "14",
+          "currentMonthCount": 48,
+          "previousMonthCount": 47,
+          "currentMonthAmount": 480000,
+          "previousMonthAmount": 870000
+        },
+        {
+          "day": "15",
+          "currentMonthCount": 24,
+          "previousMonthCount": 33,
+          "currentMonthAmount": 440000,
+          "previousMonthAmount": 830000
+        },
+        {
+          "day": "16",
+          "currentMonthCount": 10,
+          "previousMonthCount": 48,
+          "currentMonthAmount": 320000,
+          "previousMonthAmount": 580000
+        },
+        {
+          "day": "17",
+          "currentMonthCount": 25,
+          "previousMonthCount": 13,
+          "currentMonthAmount": 250000,
+          "previousMonthAmount": 390000
+        },
+        {
+          "day": "18",
+          "currentMonthCount": 32,
+          "previousMonthCount": 20,
+          "currentMonthAmount": 330000,
+          "previousMonthAmount": 340000
+        },
+        {
+          "day": "19",
+          "currentMonthCount": 21,
+          "previousMonthCount": 23,
+          "currentMonthAmount": 230000,
+          "previousMonthAmount": 240000
+        },
+        {
+          "day": "20",
+          "currentMonthCount": 31,
+          "previousMonthCount": 34,
+          "currentMonthAmount": 740000,
+          "previousMonthAmount": 830000
+        }
+      ]
+    },
+    "dailySelfProfitData": {
+      "status": "success",
+      "data": [
+        {
+          "day": "1",
+          "currentMonthProfit": 7178,
+          "previousMonthProfit": 6673
+        },
+        {
+          "day": "2",
+          "currentMonthProfit": 7393,
+          "previousMonthProfit": 6897
+        },
+        {
+          "day": "3",
+          "currentMonthProfit": 7605,
+          "previousMonthProfit": 7218
+        },
+        {
+          "day": "4",
+          "currentMonthProfit": 7724,
+          "previousMonthProfit": 7525
+        },
+        {
+          "day": "5",
+          "currentMonthProfit": 8041,
+          "previousMonthProfit": 7698
+        },
+        {
+          "day": "6",
+          "currentMonthProfit": 8354,
+          "previousMonthProfit": 7931
+        },
+        {
+          "day": "7",
+          "currentMonthProfit": 8842,
+          "previousMonthProfit": 8333
+        },
+        {
+          "day": "8",
+          "currentMonthProfit": 9271,
+          "previousMonthProfit": 8596
+        },
+        {
+          "day": "9",
+          "currentMonthProfit": 9728,
+          "previousMonthProfit": 8723
+        },
+        {
+          "day": "10",
+          "currentMonthProfit": 9963,
+          "previousMonthProfit": 9085
+        },
+        {
+          "day": "11",
+          "currentMonthProfit": 10378,
+          "previousMonthProfit": 9283
+        },
+        {
+          "day": "12",
+          "currentMonthProfit": 10564,
+          "previousMonthProfit": 9622
+        },
+        {
+          "day": "13",
+          "currentMonthProfit": 10841,
+          "previousMonthProfit": 9926
+        },
+        {
+          "day": "14",
+          "currentMonthProfit": 10987,
+          "previousMonthProfit": 10081
+        },
+        {
+          "day": "15",
+          "currentMonthProfit": 11483,
+          "previousMonthProfit": 10230
+        },
+        {
+          "day": "16",
+          "currentMonthProfit": 11717,
+          "previousMonthProfit": 10483
+        },
+        {
+          "day": "17",
+          "currentMonthProfit": 12010,
+          "previousMonthProfit": 10719
+        },
+        {
+          "day": "18",
+          "currentMonthProfit": 12461,
+          "previousMonthProfit": 11103
+        },
+        {
+          "day": "19",
+          "currentMonthProfit": 12627,
+          "previousMonthProfit": 11326
+        },
+        {
+          "day": "20",
+          "currentMonthProfit": 13111,
+          "previousMonthProfit": 11575
+        }
+      ]
+    },
+    "averageSoldProductCountAndAmountForCurrentMonthData": {
+      "status": "success",
+      "data": { "averageCount": 58, "averageAmount": 360000 }
+    }
+  }
+]
