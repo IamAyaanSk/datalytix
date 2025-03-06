@@ -37,7 +37,7 @@ export default async function RootLayout({
         <SidebarProvider defaultOpen={defaultOpen}>
           <AppSidebar />
           <main className="w-full">
-            <div className="flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-3 bg-muted">
               <SidebarTrigger />
               <Avatar className="bg-black mr-4 w-8 h-8" />
             </div>

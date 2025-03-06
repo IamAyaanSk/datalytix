@@ -17,7 +17,7 @@ const addDateParams = (url: URL) => {
 
 export async function middleware(req: NextRequest) {
   if (req.nextUrl.pathname === '/') {
-    return NextResponse.redirect('/dashboard')
+    return NextResponse.redirect(`${req.nextUrl.origin}/dashboard`)
   }
 
   // Add date params to specific routes

@@ -24,10 +24,9 @@ export default async function DashboardPage({
   const dashboardReportData = data[randomIndex] as unknown as IGetDashboardResponseBody
 
   return (
-    <section className="max-w-screen-2xl mx-auto flex max-h-fit flex-1 flex-col px-6 py-4 gap-4 lg:gap-6">
+    <section className="max-w-screen-2xl mx-auto flex max-h-fit flex-1 flex-col px-6 py-6 gap-4 lg:gap-6">
       <div className="space-y-4">
         <DashboardHeader />
-        <Separator className="bg-primary/30" />
       </div>
 
       <h2 className="text-xl font-semibold">Overview</h2>
