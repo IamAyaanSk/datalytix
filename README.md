@@ -58,7 +58,10 @@ data-driven applications.
 
 ------------
 
-When visiting the app you may encounter demo of partial errors state ( It is intentional to showcase the error state )
+## Note
+
+- All data and fields are random made up to ensure privacy.     
+- When visiting the app you may encounter demo of partial errors state ( It is intentional to showcase the error state )
 
 ## Author
 ### Ayaan
