@@ -203,7 +203,7 @@ export function DashboardHeader() {
   }
 
   return (
-    <div className="flex items-center justify-between flex-wrap">
+    <div className="flex items-center justify-between gap-4 flex-wrap">
       <div className="flex items-center gap-3 flex-wrap">
         <DatePicker
           queryParamDate={queryParamSelectedDate}
