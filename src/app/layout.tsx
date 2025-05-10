@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
 import { AppSidebar } from '@/components/ui/app-sidebar'
 import { cookies } from 'next/headers'
 import { Separator } from '@/components/ui/separator'
@@ -36,14 +36,16 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider defaultOpen={defaultOpen}>
           <AppSidebar />
-          <main className="w-full">
-            <div className="flex items-center justify-between py-3 bg-muted">
-              <SidebarTrigger />
-              <Avatar className="bg-black mr-4 w-8 h-8" />
+          <SidebarInset>
+            <header className="flex h-16 shrink-0 items-center gap-2">
+              <div className="flex items-center gap-2 px-4">
+                <SidebarTrigger className="-ml-1" />
+              </div>
+            </header>
+            <div className="flex flex-1 flex-col mx-8">
+              <div className="@container/main flex flex-1 flex-col gap-6">{children}</div>
             </div>
-            <Separator />
-            {children}
-          </main>
+          </SidebarInset>
         </SidebarProvider>
         <Toaster richColors closeButton position="bottom-center" />
       </body>
